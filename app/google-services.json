@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "489110724598",
+    "firebase_url": "https://colledge-cvs.firebaseio.com",
+    "project_id": "colledge-cvs",
+    "storage_bucket": "colledge-cvs.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489110724598:android:94a851abda1062e1",
+        "android_client_info": {
+          "package_name": "com.vimalcvs.colledge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "489110724598-dldkecarjvtn3hgm5514ahi97ivgbsnr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyb71LVWO5BaWx6Heo7zjp-7GRvpnFd0Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vimalcvs.colledge">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeNoActionBar">
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".helper.aboutus.act.ActivitySample"
+            android:label="@string/action_about"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bschcomputerscience.ComputerScience"
+            android:label="@string/bas_h_computer_science"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- '  Hons Courses ' -->
+
+        <activity
+            android:name=".honours.HonoursCourses"
+            android:label="@string/but_hons"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Feedback"
+            android:label="@string/feedback_input"
+            android:parentActivityName=".MainActivity"/>
+
+
+        <activity android:name="com.vimalcvs.tablibrary.BottomBarHolderActivity" />
+        <activity
+            android:name=".questionpaper.QuestionPaper"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/question_paper"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Syllabus"
+            android:label="@string/activity_syllabus"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bachelorofcommercehons.BachelorOfCommerce_Hons"
+            android:label="@string/bachelor_of_commerce_hons"
+            android:parentActivityName=".honours.HonoursCourses"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahbusneisseconomic.BAbusneisseConomic_Hons"
+            android:label="@string/ba_h_business_economics"
+            android:parentActivityName=".honours.HonoursCourses"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.baheconomic.BAEconomic_Hons"
+            android:label="@string/ba_h_economics"
+            android:parentActivityName=".honours.HonoursCourses"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahenglish.BAEnglish_Hons"
+            android:label="@string/ba_h_english"
+            android:parentActivityName=".honours.HonoursCourses"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahhistory.BAHistory_Hons"
+            android:label="@string/ba_h_history"
+            android:parentActivityName=".honours.HonoursCourses"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahindi.BAHindi"
+            android:label="@string/ba_h_hindi"
+            android:parentActivityName=".honours.HonoursCourses"
+            android:theme="@style/AppTheme" />
+
+        <!-- '  Vocational Courses ' -->
+
+        <activity
+            android:name=".vocational.VocationalCourses"
+            android:label="@string/but_vocational"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bachelorofmanagementstuies.BachelorOfManagementStuies_Hons"
+            android:label="@string/bachelor_of__management_studies"
+            android:parentActivityName=".vocational.VocationalCourses"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavshumanresoursmanegment.BA_V_Human_Resours_Management"
+            android:label="@string/ba_v_human_resource_management"
+            android:parentActivityName=".vocational.VocationalCourses"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavsmangementandmarkrtingofinsurance.BA_V_Management_Marketing_of_insurance"
+            android:label="@string/ba_v__management_and_marketing_of_insurance"
+            android:parentActivityName=".vocational.VocationalCourses"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavsmarketingmanegmentandrb.BA_V_Marketing_Management_and_rb"
+            android:label="@string/ba_v_marketing__management_and_retail_business"
+            android:parentActivityName=".vocational.VocationalCourses"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavsofficemangmentandsecretarialpractice.BA_V_Office_Management"
+            android:label="@string/ba_v_office_management_and_secretarial_practice"
+            android:parentActivityName=".vocational.VocationalCourses"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavssmallandmediumenterprises.BA_V_Small_and_medium_Enterprises"
+            android:label="@string/ba_v_small_and_medium_enterprises"
+            android:parentActivityName=".vocational.VocationalCourses"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavmaterialsmanagement.BA_V_Materials_Management"
+            android:label="@string/ba_v_materials_management"
+            android:parentActivityName=".vocational.VocationalCourses"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavstourism.BA_V_Tourism"
+            android:label="@string/ba_v_tourism_management"
+            android:parentActivityName=".vocational.VocationalCourses"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Notification"
+            android:label="@string/notification"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- ' BachelorOfCommerce_Hons Semester list  ' -->
+
+        <activity
+            android:name=".honours.bachelorofcommercehons.sem1.bachelorofcommercehons_sem1"
+            android:label="@string/but_Semester1"
+            android:parentActivityName=".honours.bachelorofcommercehons.BachelorOfCommerce_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bachelorofcommercehons.sem2.bachelorofcommercehons_sem2"
+            android:label="@string/but_Semester2"
+            android:parentActivityName=".honours.bachelorofcommercehons.BachelorOfCommerce_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bachelorofcommercehons.sem3.bachelorofcommercehons_sem3"
+            android:label="@string/but_Semester3"
+            android:parentActivityName=".honours.bachelorofcommercehons.BachelorOfCommerce_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bachelorofcommercehons.sem4.bachelorofcommercehons_sem4"
+            android:label="@string/but_Semester4"
+            android:parentActivityName=".honours.bachelorofcommercehons.BachelorOfCommerce_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bachelorofcommercehons.sem5.bachelorofcommercehons_sem5"
+            android:label="@string/but_Semester5"
+            android:parentActivityName=".honours.bachelorofcommercehons.BachelorOfCommerce_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bachelorofcommercehons.sem6.bachelorofcommercehons_sem6"
+            android:label="@string/but_Semester6"
+            android:parentActivityName=".honours.bachelorofcommercehons.BachelorOfCommerce_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahbusneisseconomic.sem1.BAbusneisseConomic_Hons_SEM1"
+            android:label="@string/but_Semester1"
+            android:parentActivityName=".honours.bahbusneisseconomic.BAbusneisseConomic_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahbusneisseconomic.sem2.BAbusneisseConomic_Hons_SEM2"
+            android:label="@string/but_Semester2"
+            android:parentActivityName=".honours.bahbusneisseconomic.BAbusneisseConomic_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahbusneisseconomic.sem3.BAbusneisseConomic_Hons_SEM3"
+            android:label="@string/but_Semester3"
+            android:parentActivityName=".honours.bahbusneisseconomic.BAbusneisseConomic_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahbusneisseconomic.sem4.BAbusneisseConomic_Hons_SEM4"
+            android:label="@string/but_Semester4"
+            android:parentActivityName=".honours.bahbusneisseconomic.BAbusneisseConomic_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahbusneisseconomic.sem5.BAbusneisseConomic_Hons_SEM5"
+            android:label="@string/but_Semester5"
+            android:parentActivityName=".honours.bahbusneisseconomic.BAbusneisseConomic_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahbusneisseconomic.sem6.BAbusneisseConomic_Hons_SEM6"
+            android:label="@string/but_Semester6"
+            android:parentActivityName=".honours.bahbusneisseconomic.BAbusneisseConomic_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.baheconomic.sem1.BAEconomic_Hons_SEM1"
+            android:label="@string/but_Semester1"
+            android:parentActivityName=".honours.baheconomic.BAEconomic_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.baheconomic.sem2.BAEconomic_Hons_SEM2"
+            android:label="@string/but_Semester2"
+            android:parentActivityName=".honours.baheconomic.BAEconomic_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.baheconomic.sem3.BAEconomic_Hons_SEM3"
+            android:label="@string/but_Semester3"
+            android:parentActivityName=".honours.baheconomic.BAEconomic_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.baheconomic.sem4.BAEconomic_Hons_SEM4"
+            android:label="@string/but_Semester4"
+            android:parentActivityName=".honours.baheconomic.BAEconomic_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.baheconomic.sem5.BAEconomic_Hons_SEM5"
+            android:label="@string/but_Semester5"
+            android:parentActivityName=".honours.baheconomic.BAEconomic_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.baheconomic.sem6.BAEconomic_Hons_SEM6"
+            android:label="@string/but_Semester6"
+            android:parentActivityName=".honours.baheconomic.BAEconomic_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahenglish.sem1.BAEnglish_Hons_SEM1"
+            android:label="@string/but_Semester1"
+            android:parentActivityName=".honours.bahenglish.BAEnglish_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahenglish.sem2.BAEnglish_Hons_SEM2"
+            android:label="@string/but_Semester2"
+            android:parentActivityName=".honours.bahenglish.BAEnglish_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahenglish.sem3.BAEnglish_Hons_SEM3"
+            android:label="@string/but_Semester3"
+            android:parentActivityName=".honours.bahenglish.BAEnglish_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahenglish.sem4.BAEnglish_Hons_SEM4"
+            android:label="@string/but_Semester4"
+            android:parentActivityName=".honours.bahenglish.BAEnglish_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahenglish.sem5.BAEnglish_Hons_SEM5"
+            android:label="@string/but_Semester5"
+            android:parentActivityName=".honours.bahenglish.BAEnglish_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahenglish.sem6.BAEnglish_Hons_SEM6"
+            android:label="@string/but_Semester6"
+            android:parentActivityName=".honours.bahenglish.BAEnglish_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahhistory.sem1.BAHistory_Hons_SEM1"
+            android:label="@string/but_Semester1"
+            android:parentActivityName=".honours.bahhistory.BAHistory_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahhistory.sem2.BAHistory_Hons_SEM2"
+            android:label="@string/but_Semester2"
+            android:parentActivityName=".honours.bahhistory.BAHistory_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahhistory.sem3.BAHistory_Hons_SEM3"
+            android:label="@string/but_Semester3"
+            android:parentActivityName=".honours.bahhistory.BAHistory_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahhistory.sem4.BAHistory_Hons_SEM4"
+            android:label="@string/but_Semester4"
+            android:parentActivityName=".honours.bahhistory.BAHistory_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahhistory.sem5.BAHistory_Hons_SEM5"
+            android:label="@string/but_Semester5"
+            android:parentActivityName=".honours.bahhistory.BAHistory_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahhistory.sem6.BAHistory_Hons_SEM6"
+            android:label="@string/but_Semester6"
+            android:parentActivityName=".honours.bahhistory.BAHistory_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahindi.sem1.BAHindi_SEM1"
+            android:label="@string/but_Semester1"
+            android:parentActivityName=".honours.bahindi.BAHindi"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahindi.sem2.BAHindi_SEM2"
+            android:label="@string/but_Semester2"
+            android:parentActivityName=".honours.bahindi.BAHindi"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahindi.sem3.BAHindi_SEM3"
+            android:label="@string/but_Semester3"
+            android:parentActivityName=".honours.bahindi.BAHindi"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahindi.sem4.BAHindi_SEM4"
+            android:label="@string/but_Semester4"
+            android:parentActivityName=".honours.bahindi.BAHindi"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahindi.sem5.BAHindi_SEM5"
+            android:label="@string/but_Semester5"
+            android:parentActivityName=".honours.bahindi.BAHindi"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bahindi.sem6.BAHindi_SEM6"
+            android:label="@string/but_Semester6"
+            android:parentActivityName=".honours.bahindi.BAHindi"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bschcomputerscience.sem1.ComputerScience_SEM1"
+            android:label="@string/but_Semester1"
+            android:parentActivityName=".honours.bschcomputerscience.ComputerScience"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bschcomputerscience.sem2.ComputerScience_SEM2"
+            android:label="@string/but_Semester2"
+            android:parentActivityName=".honours.bschcomputerscience.ComputerScience"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bschcomputerscience.sem3.ComputerScience_SEM3"
+            android:label="@string/but_Semester3"
+            android:parentActivityName=".honours.bschcomputerscience.ComputerScience"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bschcomputerscience.sem4.ComputerScience_SEM4"
+            android:label="@string/but_Semester4"
+            android:parentActivityName=".honours.bschcomputerscience.ComputerScience"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bschcomputerscience.sem5.ComputerScience_SEM5"
+            android:label="@string/but_Semester5"
+            android:parentActivityName=".honours.bschcomputerscience.ComputerScience"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".honours.bschcomputerscience.sem6.ComputerScience_SEM6"
+            android:label="@string/but_Semester6"
+            android:parentActivityName=".honours.bschcomputerscience.ComputerScience"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bachelorofmanagementstuies.sem1.BachelorOfManagementStuies_Hons_Sem1"
+            android:label="@string/but_Semester1"
+            android:parentActivityName=".vocational.bachelorofmanagementstuies.BachelorOfManagementStuies_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bachelorofmanagementstuies.sem2.BachelorOfManagementStuies_Hons_Sem2"
+            android:label="@string/but_Semester2"
+            android:parentActivityName=".vocational.bachelorofmanagementstuies.BachelorOfManagementStuies_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bachelorofmanagementstuies.sem3.BachelorOfManagementStuies_Hons_Sem3"
+            android:label="@string/but_Semester3"
+            android:parentActivityName=".vocational.bachelorofmanagementstuies.BachelorOfManagementStuies_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bachelorofmanagementstuies.sem4.BachelorOfManagementStuies_Hons_Sem4"
+            android:label="@string/but_Semester4"
+            android:parentActivityName=".vocational.bachelorofmanagementstuies.BachelorOfManagementStuies_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bachelorofmanagementstuies.sem5.BachelorOfManagementStuies_Hons_Sem5"
+            android:label="@string/but_Semester5"
+            android:parentActivityName=".vocational.bachelorofmanagementstuies.BachelorOfManagementStuies_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bachelorofmanagementstuies.sem6.BachelorOfManagementStuies_Hons_Sem6"
+            android:label="@string/but_Semester6"
+            android:parentActivityName=".vocational.bachelorofmanagementstuies.BachelorOfManagementStuies_Hons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavmaterialsmanagement.sem1.BA_V_Materials_Management_Sem1"
+            android:label="@string/but_Semester1"
+            android:parentActivityName=".vocational.bavmaterialsmanagement.BA_V_Materials_Management"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavmaterialsmanagement.sem2.BA_V_Materials_Management_Sem2"
+            android:label="@string/but_Semester2"
+            android:parentActivityName=".vocational.bavmaterialsmanagement.BA_V_Materials_Management"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavmaterialsmanagement.sem3.BA_V_Materials_Management_Sem3"
+            android:label="@string/but_Semester3"
+            android:parentActivityName=".vocational.bavmaterialsmanagement.BA_V_Materials_Management"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavmaterialsmanagement.sem4.BA_V_Materials_Management_Sem4"
+            android:label="@string/but_Semester4"
+            android:parentActivityName=".vocational.bavmaterialsmanagement.BA_V_Materials_Management"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavmaterialsmanagement.sem5.BA_V_Materials_Management_Sem5"
+            android:label="@string/but_Semester5"
+            android:parentActivityName=".vocational.bavmaterialsmanagement.BA_V_Materials_Management"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavmaterialsmanagement.sem6.BA_V_Materials_Management_Sem6"
+            android:label="@string/but_Semester6"
+            android:parentActivityName=".vocational.bavmaterialsmanagement.BA_V_Materials_Management"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavshumanresoursmanegment.sem1.BA_V_Human_Resours_Management_SEM1"
+            android:label="@string/but_Semester1"
+            android:parentActivityName=".vocational.bavshumanresoursmanegment.BA_V_Human_Resours_Management"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavshumanresoursmanegment.sem2.BA_V_Human_Resours_Management_SEM2"
+            android:label="@string/but_Semester2"
+            android:parentActivityName=".vocational.bavshumanresoursmanegment.BA_V_Human_Resours_Management"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavshumanresoursmanegment.sem3.BA_V_Human_Resours_Management_SEM3"
+            android:label="@string/but_Semester3"
+            android:parentActivityName=".vocational.bavshumanresoursmanegment.BA_V_Human_Resours_Management"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavshumanresoursmanegment.sem4.BA_V_Human_Resours_Management_SEM4"
+            android:label="@string/but_Semester4"
+            android:parentActivityName=".vocational.bavshumanresoursmanegment.BA_V_Human_Resours_Management"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavshumanresoursmanegment.sem5.BA_V_Human_Resours_Management_SEM5"
+            android:label="@string/but_Semester5"
+            android:parentActivityName=".vocational.bavshumanresoursmanegment.BA_V_Human_Resours_Management"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavshumanresoursmanegment.sem6.BA_V_Human_Resours_Management_SEM6"
+            android:label="@string/but_Semester6"
+            android:parentActivityName=".vocational.bavshumanresoursmanegment.BA_V_Human_Resours_Management"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavsmangementandmarkrtingofinsurance.sem1.BA_V_Management_Marketing_of_insurance_SEM1"
+            android:label="@string/but_Semester1"
+            android:parentActivityName=".vocational.bavsmangementandmarkrtingofinsurance.BA_V_Management_Marketing_of_insurance"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavsmangementandmarkrtingofinsurance.sem2.BA_V_Management_Marketing_of_insurance_SEM2"
+            android:label="@string/but_Semester2"
+            android:parentActivityName=".vocational.bavsmangementandmarkrtingofinsurance.BA_V_Management_Marketing_of_insurance"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavsmangementandmarkrtingofinsurance.sem3.BA_V_Management_Marketing_of_insurance_SEM3"
+            android:label="@string/but_Semester3"
+            android:parentActivityName=".vocational.bavsmangementandmarkrtingofinsurance.BA_V_Management_Marketing_of_insurance"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavsmangementandmarkrtingofinsurance.sem4.BA_V_Management_Marketing_of_insurance_SEM4"
+            android:label="@string/but_Semester4"
+            android:parentActivityName=".vocational.bavsmangementandmarkrtingofinsurance.BA_V_Management_Marketing_of_insurance"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavsmangementandmarkrtingofinsurance.sem5.BA_V_Management_Marketing_of_insurance_SEM5"
+            android:label="@string/but_Semester5"
+            android:parentActivityName=".vocational.bavsmangementandmarkrtingofinsurance.BA_V_Management_Marketing_of_insurance"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavsmangementandmarkrtingofinsurance.sem6.BA_V_Management_Marketing_of_insurance_SEM6"
+            android:label="@string/but_Semester6"
+            android:parentActivityName=".vocational.bavsmangementandmarkrtingofinsurance.BA_V_Management_Marketing_of_insurance"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavsmarketingmanegmentandrb.sem1.BA_V_Marketing_Management_and_rb_SEM1"
+            android:label="@string/but_Semester1"
+            android:parentActivityName=".vocational.bavsmarketingmanegmentandrb.BA_V_Marketing_Management_and_rb"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavsmarketingmanegmentandrb.sem2.BA_V_Marketing_Management_and_rb_SEM2"
+            android:label="@string/but_Semester2"
+            android:parentActivityName=".vocational.bavsmarketingmanegmentandrb.BA_V_Marketing_Management_and_rb"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavsmarketingmanegmentandrb.sem3.BA_V_Marketing_Management_and_rb_SEM3"
+            android:label="@string/but_Semester3"
+            android:parentActivityName=".vocational.bavsmarketingmanegmentandrb.BA_V_Marketing_Management_and_rb"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavsmarketingmanegmentandrb.sem4.BA_V_Marketing_Management_and_rb_SEM4"
+            android:label="@string/but_Semester4"
+            android:parentActivityName=".vocational.bavsmarketingmanegmentandrb.BA_V_Marketing_Management_and_rb"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavsmarketingmanegmentandrb.sem5.BA_V_Marketing_Management_and_rb_SEM5"
+            android:label="@string/but_Semester5"
+            android:parentActivityName=".vocational.bavsmarketingmanegmentandrb.BA_V_Marketing_Management_and_rb"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavsmarketingmanegmentandrb.sem6.BA_V_Marketing_Management_and_rb_SEM6"
+            android:label="@string/but_Semester6"
+            android:parentActivityName=".vocational.bavsmarketingmanegmentandrb.BA_V_Marketing_Management_and_rb"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavsofficemangmentandsecretarialpractice.sem1.BA_V_Office_Management_SEM1"
+            android:label="@string/but_Semester1"
+            android:parentActivityName=".vocational.bavsofficemangmentandsecretarialpractice.BA_V_Office_Management"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavsofficemangmentandsecretarialpractice.sem2.BA_V_Office_Management_SEM2"
+            android:label="@string/but_Semester2"
+            android:parentActivityName=".vocational.bavsofficemangmentandsecretarialpractice.BA_V_Office_Management"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavsofficemangmentandsecretarialpractice.sem3.BA_V_Office_Management_SEM3"
+            android:label="@string/but_Semester3"
+            android:parentActivityName=".vocational.bavsofficemangmentandsecretarialpractice.BA_V_Office_Management"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavsofficemangmentandsecretarialpractice.sem4.BA_V_Office_Management_SEM4"
+            android:label="@string/but_Semester4"
+            android:parentActivityName=".vocational.bavsofficemangmentandsecretarialpractice.BA_V_Office_Management"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavsofficemangmentandsecretarialpractice.sem5.BA_V_Office_Management_SEM5"
+            android:label="@string/but_Semester5"
+            android:parentActivityName=".vocational.bavsofficemangmentandsecretarialpractice.BA_V_Office_Management"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavsofficemangmentandsecretarialpractice.sem6.BA_V_Office_Management_SEM6"
+            android:label="@string/but_Semester6"
+            android:parentActivityName=".vocational.bavsofficemangmentandsecretarialpractice.BA_V_Office_Management"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavssmallandmediumenterprises.sem1.BA_V_Small_and_medium_Enterprises_SEM1"
+            android:label="@string/but_Semester1"
+            android:parentActivityName=".vocational.bavssmallandmediumenterprises.BA_V_Small_and_medium_Enterprises"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavssmallandmediumenterprises.sem2.BA_V_Small_and_medium_Enterprises_SEM2"
+            android:label="@string/but_Semester2"
+            android:parentActivityName=".vocational.bavssmallandmediumenterprises.BA_V_Small_and_medium_Enterprises"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavssmallandmediumenterprises.sem3.BA_V_Small_and_medium_Enterprises_SEM3"
+            android:label="@string/but_Semester3"
+            android:parentActivityName=".vocational.bavssmallandmediumenterprises.BA_V_Small_and_medium_Enterprises"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavssmallandmediumenterprises.sem4.BA_V_Small_and_medium_Enterprises_SEM4"
+            android:label="@string/but_Semester4"
+            android:parentActivityName=".vocational.bavssmallandmediumenterprises.BA_V_Small_and_medium_Enterprises"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavssmallandmediumenterprises.sem5.BA_V_Small_and_medium_Enterprises_SEM5"
+            android:label="@string/but_Semester5"
+            android:parentActivityName=".vocational.bavssmallandmediumenterprises.BA_V_Small_and_medium_Enterprises"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavssmallandmediumenterprises.sem6.BA_V_Small_and_medium_Enterprises_SEM6"
+            android:label="@string/but_Semester6"
+            android:parentActivityName=".vocational.bavssmallandmediumenterprises.BA_V_Small_and_medium_Enterprises"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavstourism.sem1.BA_V_Tourism_SEM1"
+            android:label="@string/but_Semester1"
+            android:parentActivityName=".vocational.bavstourism.BA_V_Tourism"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavstourism.sem2.BA_V_Tourism_SEM2"
+            android:label="@string/but_Semester2"
+            android:parentActivityName=".vocational.bavstourism.BA_V_Tourism"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavstourism.sem3.BA_V_Tourism_SEM3"
+            android:label="@string/but_Semester3"
+            android:parentActivityName=".vocational.bavstourism.BA_V_Tourism"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavstourism.sem4.BA_V_Tourism_SEM4"
+            android:label="@string/but_Semester4"
+            android:parentActivityName=".vocational.bavstourism.BA_V_Tourism"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavstourism.sem5.BA_V_Tourism_SEM5"
+            android:label="@string/but_Semester5"
+            android:parentActivityName=".vocational.bavstourism.BA_V_Tourism"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".vocational.bavstourism.sem6.BA_V_Tourism_SEM6"
+            android:label="@string/but_Semester6"
+            android:parentActivityName=".vocational.bavstourism.BA_V_Tourism"
+            android:theme="@style/AppTheme" />
+
+        <service android:name=".helper.firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".helper.firebase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".questionpaper.H_English_Que"
+            android:label="@string/ba_english"
+            android:parentActivityName=".questionpaper.QuestionPaper"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".questionpaper.H_Bachelor_of_Commerce_Que"
+            android:label="@string/ba_bachelor_of_commerce"
+            android:parentActivityName=".questionpaper.QuestionPaper"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".questionpaper.H_Business_Economics_Que"
+            android:label="@string/ba_business_economics"
+            android:parentActivityName=".questionpaper.QuestionPaper"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".questionpaper.H_Computer_Science_Que"
+            android:label="@string/bsc_computer_science"
+            android:parentActivityName=".questionpaper.QuestionPaper"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".questionpaper.H_Economics_Que"
+            android:label="@string/ba_economics"
+            android:parentActivityName=".questionpaper.QuestionPaper"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".questionpaper.H_Historys_Que"
+            android:label="@string/ba_history"
+            android:parentActivityName=".questionpaper.QuestionPaper"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".questionpaper.H_Hindi_Que"
+            android:label="@string/ba_hindi"
+            android:parentActivityName=".questionpaper.QuestionPaper"
+            android:theme="@style/AppTheme" />
+
+
+
+
+        <activity
+            android:name=".questionpaper.V_Bachelor_of_Management_Studies_Que"
+            android:label="@string/bachelor_of_management_studies"
+            android:parentActivityName=".questionpaper.QuestionPaper"
+            android:theme="@style/AppTheme" />
+
+
+        <activity
+            android:name=".questionpaper.V_Human_Resource_Management_Que"
+            android:label="@string/ba_human_resource_management"
+            android:parentActivityName=".questionpaper.QuestionPaper"
+            android:theme="@style/AppTheme" />
+
+
+        <activity
+            android:name=".questionpaper.V_Management_and_Marketing_of_Insurance_Que"
+            android:label="@string/ba_management_and_marketing_of_insurance"
+            android:parentActivityName=".questionpaper.QuestionPaper"
+            android:theme="@style/AppTheme" />
+
+
+        <activity
+            android:name=".questionpaper.V_Marketing_Management_and_Retail_Business_Que"
+            android:label="@string/ba_marketing_management_and_retail_business"
+            android:parentActivityName=".questionpaper.QuestionPaper"
+            android:theme="@style/AppTheme" />
+
+
+        <activity
+            android:name=".questionpaper.V_Materials_Management_Que"
+            android:label="@string/ba_materials_management"
+            android:parentActivityName=".questionpaper.QuestionPaper"
+            android:theme="@style/AppTheme" />
+
+
+        <activity
+            android:name=".questionpaper.V_Office_Management_and_Secretarial_Practice_Que"
+            android:label="@string/ba_office_management_and_secretarial_practice"
+            android:parentActivityName=".questionpaper.QuestionPaper"
+            android:theme="@style/AppTheme" />
+
+
+        <activity
+            android:name=".questionpaper.V_Small_and_Medium_Enterprises_Que"
+            android:label="@string/ba_small_and_medium_enterprises"
+            android:parentActivityName=".questionpaper.QuestionPaper"
+            android:theme="@style/AppTheme" />
+
+
+        <activity
+            android:name=".questionpaper.V_Tourism_Management_Que"
+            android:label="@string/ba_tourism_management"
+            android:parentActivityName=".questionpaper.QuestionPaper"
+            android:theme="@style/AppTheme" />
+
+
+
+
+    </application>
+
+</manifest>

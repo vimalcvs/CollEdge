@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">CollEdge</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!-- ' and main ' -->
+    <string name="action_home">Home</string>
+    <string name="action_exit">Exit</string>
+    <string name="action_back">Back</string>
+    <string name="costomview">im custom view</string>
+    <string name="action_share">Share - App</string>
+    <string name="activity_semester">Semester List</string>
+    <string name="activity_video_lectures">Video Lectures</string>
+    <string name="activity_short_notes">Short Notes</string>
+    <string name="activity_lab_program">Lab\'s Program</string>
+    <string name="question_paper">Question Paper</string>
+    <string name="activity_solution">Solution</string>
+    <string name="notification">Notification</string>
+
+    <!-- ' Developer About ' -->
+    <string name="dev_by">Developed and Designed By:- Vimal (CVS)</string>
+    <string name="the_perfect_place">The perfect place for easy learning</string>
+
+
+    <!-- ' Semester list  ' -->
+    <string name="but_course">All Subjects Notes.</string>
+    <string name="but_Semester1">S E M - I</string>
+    <string name="but_Semester2">S E M - II</string>
+    <string name="but_Semester3">S E M - III</string>
+    <string name="but_Semester4">S E M - IV</string>
+    <string name="but_Semester5">S E M - V</string>
+    <string name="but_Semester6">S E M - VI</string>
+
+    <!-- ' Courses list  ' -->
+    <string name="cs_course">Computer Science</string>
+    <string name="cs_year_1"> Computer Science Year(I)</string>
+    <string name="cs_year_2"> Computer Science Year(II)</string>
+    <string name="cs_year_3"> Computer Science Year(III)</string>
+
+    <!-- ' Content Main  ' -->
+
+    <string name="action_about">About us</string>
+    <string name="but_hons">H O N O U R S</string>
+    <string name="but_vocational">V O C A T I O N A L</string>
+    <string name="activity_question_Paper">Q U E S T I O N S</string>
+    <string name="activity_syllabus">S Y L L A B U S</string>
+    <string name="activity_new_update">N E W - U P D A T E</string>
+
+    <!-- ' Honours  ' -->
+
+    <string name="ba_h_english">B.A - E N G L I S H</string>
+    <string name="ba_h_economics">B.A E C O N O M I C S</string>
+    <string name="ba_h_history">B.A - H I S T O R Y</string>
+    <string name="ba_h_hindi">B.A - H I N D I</string>
+    <string name="ba_h_business_economics">B.A - B U S I N E S S  E C O N O M I C S</string>
+    <string name="bas_h_computer_science">B.SC - C O M P U T E R  S C I E N C E</string>
+    <string name="bachelor_of_commerce_hons">B A C H E L O R   OF   C O M M E R C E - (H)</string>
+
+
+    <string name="ba_tourism_management">B.A - Tourism Management</string>
+    <string name="ba_materials_management">B.A - Materials Management</string>
+    <string name="ba_human_resource_management">B.A - Human Resource Management</string>
+    <string name="ba_small_and_medium_enterprises">B.A - Small and Medium Enterprises</string>
+    <string name="ba_management_and_marketing_of_insurance">B.A - Management and Marketing of Insurance</string>
+    <string name="ba_office_management_and_secretarial_practice">B.A - Office Management and Secretarial Practice</string>
+    <string name="ba_marketing_management_and_retail_business">B.A - Marketing Management and Retail Business</string>
+    <string name="bachelor_of_management_studies">Bachelor of Management Studies</string>
+
+
+    <!-- ' Vocational  ' -->
+
+    <string name="ba_v_tourism_management">B.A - TOURISM MANAGEMENT</string>
+    <string name="ba_v_materials_management">B.A - MATERIALS MANAGEMENT</string>
+    <string name="ba_v_human_resource_management">B.A - HUMAN RESOURCE MANAGEMENT</string>
+    <string name="ba_v_small_and_medium_enterprises">B.A - SMALL AND MEDIUM ENTERPRISES</string>
+    <string name="ba_v__management_and_marketing_of_insurance">B.A - MANAGEMENT AND MARKETING OF INSURANCE</string>
+    <string name="ba_v_office_management_and_secretarial_practice">B.A - OFFICE MANAGEMENT AND SECRETARIAL PRACTICE</string>
+    <string name="ba_v_marketing__management_and_retail_business">B.A - MARKETING MANAGEMENT AND RETAIL BUSINESS</string>
+    <string name="bachelor_of__management_studies">BACHELOR OF MANAGEMENT STUDIES</string>
+
+
+    <string name="ba_english">B.A - English</string>
+    <string name="ba_economics">B.A - Economics</string>
+    <string name="ba_history">B.A - History\'s</string>
+    <string name="ba_hindi">B.A - Hindi</string>
+    <string name="ba_business_economics">B.A - Business Economics</string>
+    <string name="bsc_computer_science">B.Sc - Computer Science</string>
+    <string name="ba_bachelor_of_commerce">Bachelor of Commerce</string>
+
+
+
+    <string name="feedback_input">Feedback</string>
+    <string name="name_input">Name</string>
+    <string name="email_input">Email</string>
+    <string name="feedback_input_hint">Enter your feedback</string>
+    <string name="name_input_hint">Enter your name</string>
+    <string name="email_input_hint">Enter your email</string>
+    <string name="dialog_content">This is a demo app, showing you how you can use Google VIMALCVS as your feedback form inside any app. Developed by Vimal K. Vishwakarma.</string>
+    <string name="github_url">https://github.com/vimalcvs</string>
+    <string name="navigation_title">My navigation title</string>
+</resources>
